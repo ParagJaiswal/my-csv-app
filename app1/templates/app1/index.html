@@ -1,0 +1,36 @@
+<html>
+    <body>
+        <h1>
+            Hello Guest Here you get list of Students
+        </h1>
+        <table border="1px">
+            <tr>
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Address
+                </th>
+                <th>
+                    Mobile
+                </th>
+            </tr>
+            {% for student in students %}
+            <tr>
+                <td>{{student.first_name}}</td>
+                <td>{{student.last_name}}</td>
+                <td>{{student.address}}</td>
+                <td>{{student.mobile}}</td>
+
+            </tr>
+            {% endfor %}
+        </table><br><br>
+        <a href="record_csv_file" style="text-decoration:none">Get records in CSV file</a>
+
+    </body>
+
+   
+</html>
